@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "cmr1",
+      "public": "dist/cmr1",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

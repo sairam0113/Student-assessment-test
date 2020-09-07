@@ -1,0 +1,22 @@
+<div class="result">
+    <br><b>Your Result:</b><br>
+    <h3>Personality Score:</h3>{{count.cc}}<br>
+    <h3>Coding Score:</h3>{{count.cdc}}<br>
+    <h3>English Score:</h3>{{count.ec}}
+</div>
+<br><br><br><br>
+<h1>Thank you for taking the test </h1><br><br>
+<div style="text-align: center;">
+<div *ngIf="cod" class="design">
+    <h4>References in coding</h4>
+    <a href="https://codeforces.com"><b>CodeForces</b></a><br>
+    <a href="https://hackerrank.com"><b>HackerRank</b></a><br>
+    <a href="https://hackerearth.com"><b>HackerEarth</b></a><br><br>
+</div>
+<div *ngIf="eng" class="design">
+    <h4>References in English</h4>
+    <a href="www.englishcentral.com"><b>English Central</b></a><br>
+    <a href="www.newsinlevels.com"><b>News In Levels</b></a><br>
+    <a href="www.examenglish.com"><b>Exam English</b></a><br>
+</div>
+</div>

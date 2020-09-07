@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "hack-17812": {
+      "hosting": {
+        "cmr1": [
+          "hack-17812"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "hack-17812"
+  }
+}

@@ -1,0 +1,100 @@
+<mat-toolbar color="primary">Self-Assessment</mat-toolbar><br>
+<div class="yourself">
+  <img src="https://cdn4.vectorstock.com/i/1000x1000/00/23/check-mark-icon-checkmark-right-symbol-vector-28490023.jpg" id="yourself-img"/>
+  <br>Be Yourself,To know about Yourself<br><br>
+</div>
+<section class="s1">
+<div  class="display" *ngFor='let c of character'>
+  <div id="char" >
+    <label class="character">{{c.q}}</label><br>
+    <span class="agree-colour">
+                Agree<button (click)="charagree(c)" class="agree1" ></button>&nbsp;&nbsp;
+                <button (click)="charagree(c)" class="agree2" ></button>&nbsp;&nbsp;
+                <button (click)="charagree(c)" class="agree3" ></button>&nbsp;&nbsp;
+            </span>
+    <span class="disagree-colour">
+                &nbsp;&nbsp;<button (click)="disagree()" class="disagree3"></button>&nbsp;&nbsp;
+                <button (click)="disagree()" class="disagree2"></button>&nbsp;&nbsp;
+                <button (click)="disagree()" class="disagree1"></button>Disagree
+            </span>
+    <hr>
+  </div>
+</div>
+<div  class="display" *ngFor='let c of coding'>
+  <div id="cod">
+    <label class="coding">{{c.q}}</label><br>
+    <span class="agree-colour">
+                Agree<button (click)="codagree()" class="agree1" ></button>&nbsp;&nbsp;
+            </span>
+    <span class="disagree-colour">
+                <button (click)="disagree()" class="disagree1"></button>Disagree
+            </span>
+    <hr>
+  </div>
+</div>
+<div class="cbtn">
+  <img src="../assets/coding1.jpg"/><br>
+ 1. &nbsp;<button (click)="codagree()">a</button><br><br>
+ 2.&nbsp;<button>b</button><br><br>
+ 3.&nbsp;<button>c</button><br><br>
+ 4.&nbsp;<button>d</button><br><br>
+</div>
+<hr>
+<div class="cbtn">
+  <img src="../assets/coding2.jpg"/><br>
+ 1. &nbsp;<button >a</button><br><br>
+ 2.&nbsp;<button>b</button><br><br>
+ 3.&nbsp;<button (click)="codagree()">c</button><br><br>
+ 4.&nbsp;<button>d</button><br><br>
+</div>
+<hr>
+<div class="cbtn">
+  <img src="../assets/coding3.jpg"/><br>
+ 1. &nbsp;<button >a</button><br><br>
+ 2.&nbsp;<button (click)="codagree()">b</button><br><br>
+ 3.&nbsp;<button>c</button><br><br>
+ 4.&nbsp;<button>d</button><br><br>
+</div>
+<hr>
+<div class="cbtn">
+  <img src="../assets/coding4.jpg"/><br>
+ 1. &nbsp;<button >a</button><br><br>
+ 2.&nbsp;<button>b</button><br><br>
+ 3.&nbsp;<button>c</button><br><br>
+ 4.&nbsp;<button (click)="codagree()">d</button><br><br>
+</div>
+<hr>
+<div class="cbtn">
+  <img src="../assets/coding5.jpg"/><br>
+ 1. &nbsp;<button (click)="codagree()">a</button><br><br>
+ 2.&nbsp;<button>b</button><br><br>
+ 3.&nbsp;<button>c</button><br><br>
+ 4.&nbsp;<button>d</button><br><br>
+</div>
+<hr>
+<div class="cbtn">
+  <img src="../assets/coding6.jpg"/><br>
+ 1. &nbsp;<button >a</button><br><br>
+ 2.&nbsp;<button>b</button><br><br>
+ 3.&nbsp;<button (click)="codagree()">c</button><br><br>
+ 4.&nbsp;<button>d</button><br><br>
+</div>
+<hr>
+<div class="display" *ngFor='let e of english'>
+  <div id="eng">
+    <label class="english" >{{e.q}}</label><br>
+    <span class="agree-colour">
+                Agree<button (click)="engagree()" class="agree1"></button>&nbsp;&nbsp;
+            </span>
+    <span class="disagree-colour">
+                <button (click)="disagree()" class="disagree1"></button>Disagree
+            </span>
+    <hr>
+  </div>
+</div><br><br>
+</section>
+<div class="final">
+<button type="button" class="btn btn-success btn-lg" (click)="evaluate()"  >Finish</button>
+</div>
+
+
